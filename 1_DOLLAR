@@ -1,0 +1,21 @@
+#include "stdafx.h"
+
+int main(){
+	int x = 0, y= 0 , z= 0;
+	int k = 0;
+
+	for(z= 20; z >= 0; z--){
+		for(y = (100 - 5*z)/2; y >= 0; y--){
+			if(x >= 0){
+				x = 100 - 5*z - 2*y;
+				k++;
+				printf("%2d %2d %2d\n", x,y,z);
+
+			}
+		}
+	}
+
+	printf("%d\n",k);
+
+	return 0;
+}
